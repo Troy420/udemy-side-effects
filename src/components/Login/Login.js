@@ -67,7 +67,7 @@ const Login = (props) => {
       console.log("CLEAN UP");
       clearTimeout(identifier);
     };
-  }, [emailState, passState]);
+  }, [emailState.isValid, passState.isValid]);
 
   const emailChangeHandler = (event) => {
     dispatchEmail({
